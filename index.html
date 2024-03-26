@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.cdnfonts.com/css/pf-ronda-seven" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>@trought</h1>
+            <div id="typewriter" class="typewriter"></div>
+            <div class="line" >-----------------------</div>
+            <div class="socials">
+                <a target="_blank" href=""><img id="discord" src="discord.png" width="30px"></a>
+                <a target="_blank" href=""><img id="fraudd" src="fraudd.png" width="35px"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sentences = [
+          "discord.gg/fools",
+          "Royal is a skid",
+          "@trought",
+          "discord.gg/fraudd",
+          "wsK",
+          "jah likes them little boys",
+          "CHAUNCEY IS AN INDIAN MONKEY",
+          "depart.lol",
+          "trought.lol"
+        ];
+      
+        const typewriter = document.getElementById('typewriter');
+        let currentSentenceIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+      
+        function type() {
+          const currentSentence = sentences[currentSentenceIndex];
+      
+          if (isDeleting) {
+            typewriter.textContent = currentSentence.substring(0, currentCharIndex - 1);
+            currentCharIndex--;
+          } else {
+            typewriter.textContent = currentSentence.substring(0, currentCharIndex + 1);
+            currentCharIndex++;
+          }
+      
+          if (!isDeleting && currentCharIndex === currentSentence.length + 1) {
+            isDeleting = true;
+            setTimeout(type, 500); 
+          } else if (isDeleting && currentCharIndex === 0) {
+            isDeleting = false;
+            currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
+            setTimeout(type, 100); 
+          } else {
+            setTimeout(type, isDeleting ? 20 : 50);
+          }
+        }
+      
+        type();
+      </script>
+
+
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+        <div class="snowflake">
+            <img src="snow.png" width="20px">
+        </div>
+      </div>
+</body>
+</html>
