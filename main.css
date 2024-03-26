@@ -1,0 +1,130 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-3');
+
+body {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    cursor: url('CROSS.png'), auto;	
+    font-family: 'Minecraft', sans-serif;
+}
+
+.pfp img {
+    border-radius: 100%;
+    width: 160px;
+    border: 1.5px solid rgb(255, 255, 255);
+    transition: all 0.5s;
+    font-family: 'Minecraft', sans-serif;
+}
+
+.pfp img:hover {
+    transform: scale(1.05);
+}
+
+#discord {
+    transition: transform 0.3s ease-in-out; 
+}
+
+#telegram {
+    transition: transform 0.3s ease-in-out; 
+}
+
+#user {
+    transition: transform 0.3s ease-in-out; 
+}
+
+#instagram {
+    transition: transform 0.3s ease-in-out; 
+}
+
+#discord:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+#telegram:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+#user:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+#instagram:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.socials a img {
+    margin: 10px;
+}
+
+hr {
+    width: 80px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px;
+    position: relative;
+    top: 12px;
+}
+
+.icon {
+    position: relative;
+    bottom: 14px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 390px;
+    height: 490px;
+    background-color: rgb(124, 124, 124);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text h3{
+    margin-top: 15px;
+}
+
+.text h3 {
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: fill;
+  }

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://files.catbox.moe/ysnv1w.gif">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+    <meta property="og:title" content="gig" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trought.lol" />
+    <meta property="og:image" content="https://i.pinimg.com/564x/77/dc/c5/77dcc548b355db557cdbd19e3bc141b6.jpg" />
+    <meta property="og:description" content="珊瑚" />
+    <meta name="theme-color" content="#00000">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <img src="crown.png" width="50px">
+            <div class="icon">
+            </div>
+            <div class="pfp"><img src="https://cdn.discordapp.com/attachments/1209338482535698435/1220981014210412555/2071092bf51c331d36b668212d2cd7f5.jpg?ex=6610ea2e&is=65fe752e&hm=9839b837fd0826e55f3cdba98ad8755bea29c7e5e06dcfd25bebc72bd716e3cb&"></div>
+            <h1>trought</h1>
+            <div id="typewriter"></div>
+            <div class="socials">
+                <a href="https://discord.com/users/1193363588837036132" target="_blank"><img id="discord" src="discord.png" width="20px"></a>
+                <a href="https://t.me/petbe" target="_blank"><img id="telegram" src="telegram.png" width="20px"></a>
+                <a href="https://discord.gg/fraudd" target="_blank"><img id="user" src="user.png" width="20px"></a>
+                <a href="https://instagram.com/troughting" target="_blank"><img id="instagram" src="instagram.png" width="20px"></a>
+            </div>
+            <hr>
+            <p id="invite" >https://depart.lol</p>
+            <hr>
+        </div>
+    </div>
+
+    <audio autoplay src="YEN YUKE SPLEE MY STAIN !!!.wav"></audio>
+
+    <script>
+      document.addEventListener('keydown', function(event) {
+        if (event.key === "F12") {
+          window.location.href = 'https://fbi.bet'; 
+        }
+      });
+      </script>
+
+
+
+    <script>
+        function recursiveAnimateTitle(string) {
+  let firstLetter = string[0];
+  let title = document.querySelector('title');
+  title.innerHTML += firstLetter;
+  if (string.length > 1) {
+    setTimeout(function() {
+      recursiveAnimateTitle(string.substring(1));
+    }, 100);
+  }
+}
+
+function animateTitle(string) {
+  document.querySelector('title').innerHTML = "";
+  recursiveAnimateTitle(string);
+}
+
+animateTitle('trought.lol');
+    </script>
+
+<script type="text/javascript">
+
+  // <![CDATA[
+  var colour = "#ffffff";
+  var sparkles = 120;
+
+
+
+
+
+  <!--everything below is sparkle effects, wait for the next comment tag-->
+
+
+
+
+
+
+  var x = ox = 400;
+var y = oy = 300;
+var swide = 800;
+var shigh = 600;
+var sleft = sdown = 0;
+var tiny = new Array();
+var star = new Array();
+var starv = new Array();
+var starx = new Array();
+var stary = new Array();
+var tinyx = new Array();
+var tinyy = new Array();
+var tinyv = new Array();
+
+window.onload = function() {
+if (document.getElementById) {
+var i, rats, rlef, rdow;
+for (var i = 0; i < sparkles; i++) {
+  var rats = createDiv(3, 3);
+  rats.style.visibility = "hidden";
+  document.body.appendChild(tiny[i] = rats);
+  starv[i] = 0;
+  tinyv[i] = 0;
+  var rats = createDiv(5, 5);
+  rats.style.backgroundColor = "transparent";
+  rats.style.visibility = "hidden";
+  var rlef = createDiv(1, 5);
+  var rdow = createDiv(5, 1);
+  rats.appendChild(rlef);
+  rats.appendChild(rdow);
+  rlef.style.top = "2px";
+  rlef.style.left = "0px";
+  rdow.style.top = "0px";
+  rdow.style.left = "2px";
+  document.body.appendChild(star[i] = rats);
+}
+set_width();
+sparkle();
+}
+};
+
+function sparkle() {
+var c;
+if (x != ox || y != oy) {
+ox = x;
+oy = y;
+for (c = 0; c < sparkles; c++) {
+  if (!starv[c]) {
+    star[c].style.left = (starx[c] = x) + "px";
+    star[c].style.top = (stary[c] = y) + "px";
+    star[c].style.clip = "rect(0px, 5px, 5px, 0px)";
+    star[c].style.visibility = "visible";
+    starv[c] = 50;
+    break;
+  }
+}
+}
+for (c = 0; c < sparkles; c++) {
+if (starv[c]) update_star(c);
+if (tinyv[c]) update_tiny(c);
+}
+setTimeout("sparkle()", 25);
+}
+
+function update_star(i) {
+if (--starv[i] == 25) star[i].style.clip = "rect(1px, 4px, 4px, 1px)";
+if (starv[i]) {
+stary[i] += 1 + Math.random() * 3;
+if (stary[i] < shigh + sdown) {
+  star[i].style.top = stary[i] + "px";
+  starx[i] += (i % 15 - 0) / 5;
+  star[i].style.left = starx[i] + "px";
+}
+else {
+  star[i].style.visibility = "hidden";
+  starv[i] = 0;
+  return;
+}
+}
+else {
+tinyv[i] = 50;
+tiny[i].style.top = (tinyy[i] = stary[i]) + "px";
+tiny[i].style.left = (tinyx[i] = starx[i]) + "px";
+tiny[i].style.width = "2px";
+tiny[i].style.height = "2px";
+star[i].style.visibility = "hidden";
+tiny[i].style.visibility = "visible";
+}
+}
+
+function update_tiny(i) {
+if (--tinyv[i] == 25) {
+tiny[i].style.width = "1px";
+tiny[i].style.height = "1px";
+}
+if (tinyv[i]) {
+tinyy[i] += 1 + Math.random() * 3;
+if (tinyy[i] < shigh + sdown) {
+  tiny[i].style.top = tinyy[i] + "px";
+  tinyx[i] += (i % 5 - 2) / 5;
+  tiny[i].style.left = tinyx[i] + "px";
+}
+else {
+  tiny[i].style.visibility = "hidden";
+  tinyv[i] = 0;
+  return;
+}
+}
+else tiny[i].style.visibility = "hidden";
+}
+
+document.onmousemove = mouse;
+
+function mouse(e) {
+set_scroll();
+y = (e) ? e.pageY : event.y + sdown;
+x = (e) ? e.pageX : event.x + sleft;
+}
+
+function set_scroll() {
+if (typeof (self.pageYOffset) == "number") {
+sdown = self.pageYOffset;
+sleft = self.pageXOffset;
+}
+else if (document.body.scrollTop || document.body.scrollLeft) {
+sdown = document.body.scrollTop;
+sleft = document.body.scrollLeft;
+}
+else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+sleft = document.documentElement.scrollLeft;
+sdown = document.documentElement.scrollTop;
+}
+else {
+sdown = 0;
+sleft = 0;
+}
+}
+
+window.onresize = set_width;
+
+function set_width() {
+if (typeof (self.innerWidth) == "number") {
+swide = self.innerWidth;
+shigh = self.innerHeight;
+}
+else if (document.documentElement && document.documentElement.clientWidth) {
+swide = document.documentElement.clientWidth;
+shigh = document.documentElement.clientHeight;
+}
+else if (document.body.clientWidth) {
+swide = document.body.clientWidth;
+shigh = document.body.clientHeight;
+}
+}
+
+function createDiv(height, width) {
+var div = document.createElement("div");
+div.style.position = "absolute";
+div.style.height = height + "px";
+div.style.width = width + "px";
+div.style.overflow = "hidden";
+div.style.backgroundColor = colour;
+return div;
+}
+// ]]>
+</script>
+
+<script>
+  // Function to update the position of the fixed element
+  function updateFixedElementPosition() {
+    const fixedElement = document.getElementById('fixedElement');
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Calculate the new position
+    const newPositionLeft = viewportWidth / 2 - fixedElement.offsetWidth / 2;
+    const newPositionTop = viewportHeight / 2 - fixedElement.offsetHeight / 2;
+
+    // Set the new position
+    fixedElement.style.left = newPositionLeft + 'px';
+    fixedElement.style.top = newPositionTop + 'px';
+  }
+
+  // Initial position update
+  updateFixedElementPosition();
+
+  // Update position on window resize
+  window.addEventListener('resize', updateFixedElementPosition);
+</script>
+
+<script>
+  const sentences = [
+    "discord.gg/fools",
+    "I ❤️ skidding",
+    "@trought"
+  ];
+  
+  const typewriter = document.getElementById('typewriter');
+  let currentSentenceIndex = 0;
+  let currentCharIndex = 0;
+  let isDeleting = false;
+  
+  function type() {
+    const currentSentence = sentences[currentSentenceIndex];
+  
+    if (isDeleting) {
+      typewriter.textContent = currentSentence.substring(0, currentCharIndex - 1);
+      currentCharIndex--;
+    } else {
+      typewriter.textContent = currentSentence.substring(0, currentCharIndex + 1);
+      currentCharIndex++;
+    }
+  
+    if (!isDeleting && currentCharIndex === currentSentence.length + 1) {
+      isDeleting = true;
+      setTimeout(type, 500); // Delay before deleting (slightly longer)
+    } else if (isDeleting && currentCharIndex === 0) {
+      isDeleting = false;
+      currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
+      setTimeout(type, 100); // Faster typing speed for next sentence
+    } else {
+      setTimeout(type, isDeleting ? 20 : 50); // Faster typing speed
+    }
+  }
+  
+  // Start typing
+  type();
+  </script>
+
+
+</body>
