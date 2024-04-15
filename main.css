@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: "mc";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    text-align: center;
+
+}
+
+.box {
+    margin-bottom: 200px;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+}
+
+#un {
+    transition: all 0.4s;
+}
+
+#un:hover {
+    color: black;
+}
+
+
+
+@font-face {
+    font-family: "mc";
+    src: url("regular.otf") format("opentype");
+}
