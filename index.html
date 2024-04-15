@@ -125,6 +125,39 @@
              <div class="row">
 
 
+                     <script>
+                             function disableDevTools() {
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  }, false);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.keyCode === 123) {
+      e.preventDefault();
+    }
+  }, false);
+
+  document.onfocus = function() {
+    document.onfocus = function() {
+      window.open('', 'targetWindow', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1,height=1');
+      window.focus();
+    };
+  };
+
+  window.onerror = function() {
+    return true;
+  };
+
+  document.oncontextmenu = new Function('event.returnValue = false');
+  document.onkeydown = new Function('return false');
+  document.onmousedown = new Function('return false');
+  document.onmouseup = new Function('return false');
+}
+
+disableDevTools();
+                     </script>
+
+
 
                 <script>
                     document.addEventListener("keydown", function(event) {
