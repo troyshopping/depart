@@ -1,0 +1,35 @@
+body {
+    animation: new 4s infinite;
+    background-color: black;
+    color: rgb(122, 110, 91);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes new {
+    0% {
+      color: rgb(122, 110, 91);
+    }
+    50% {
+      color: black;
+    }
+    100% {
+      color: rgb(122, 110, 91);
+    }
+  }
+
+.box {
+    text-align: center;
+}
+
+a {
+    color: rgb(133, 107, 107);
+}
